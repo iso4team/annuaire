@@ -24,7 +24,6 @@ class ControleurProduct {
         $input = array();
         if (isset($_FILES['image'])) {
             $loadResp = Tools::loadFile('image', 'products/' . date('YmdSS'));
-            echo $loadResp;
             if (Tools::startsWith($loadResp, "0;")) {
                 $input['prd_image'] = substr($loadResp, 2, strlen($loadResp));
             }
