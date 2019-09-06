@@ -22,57 +22,23 @@
               <ul class="navbar-nav mr-auto w-100 justify-content-end">
                 <li class="nav-item active">
                   <a class="nav-link" href="index.html">
-                    Home
+                    Accueil
                   </a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pages
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    Accueil
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="about.html">About</a></li>
-                    <li><a class="dropdown-item" href="job-page.html">Job Page</a></li>
-                    <li><a class="dropdown-item" href="job-details.html">Job Details</a></li>
-                    <li><a class="dropdown-item" href="resume.html">Resume Page</a></li>
-                    <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                    <li><a class="dropdown-item" href="pricing.html">Pricing Tables</a></li>
-                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                  </ul>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Candidates
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    Qui sommes nous ?
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="browse-jobs.html">Browse Jobs</a></li>
-                    <li><a class="dropdown-item" href="browse-categories.html">Browse Categories</a></li>
-                    <li><a class="dropdown-item" href="add-resume.html">Add Resume</a></li>
-                    <li><a class="dropdown-item" href="manage-resumes.html">Manage Resumes</a></li>
-                    <li><a class="dropdown-item" href="job-alerts.html">Job Alerts</a></li>
-                  </ul>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Employers
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    Nos services
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="post-job.html">Add Job</a></li>
-                    <li><a class="dropdown-item" href="manage-jobs.html">Manage Jobs</a></li>
-                    <li><a class="dropdown-item" href="manage-applications.html">Manage Applications</a></li>
-                    <li><a class="dropdown-item" href="browse-resumes.html">Browse Resumes</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Blog 
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="blog.html">Blog - Right Sidebar</a></li>
-                    <li><a class="dropdown-item" href="blog-left-sidebar.html">Blog - Left Sidebar</a></li>
-                    <li><a class="dropdown-item" href="blog-full-width.html"> Blog full width</a></li>
-                    <li><a class="dropdown-item" href="single-post.html">Blog Single Post</a></li>
-                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">
@@ -80,10 +46,10 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login.html">Sign In</a>
+                  <a class="nav-link" href="login.html">Se connecter</a>
                 </li>
                 <li class="button-group">
-                  <a href="post-job.html" class="button btn btn-common">Post a Job</a>
+                  <a href="post-job.html" class="button btn btn-common">Devenir membre</a>
                 </li>
               </ul>
             </div>
@@ -97,14 +63,14 @@
         <div class="row space-100 justify-content-center">
           <div class="col-lg-10 col-md-12 col-xs-12">
             <div class="contents">
-              <h2 class="head-title">Find the job that fits your life</h2>
-              <p>Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus, <br> id tincidunt nisi porta sit amet. Suspendisse et sapien varius, pellentesque dui non.</p>
+              <h2 class="head-title">Trouver un professionnel, un service ou un produits.</h2>
+              <p>Des centaines de professionnels à votre disposition.</p>
               <div class="job-search-form">
                 <form>
                   <div class="row">
                     <div class="col-lg-5 col-md-6 col-xs-12">
                       <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Job Title or Company Name">
+                        <input class="form-control" type="text" placeholder="Mot cle">
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-xs-12">
@@ -112,7 +78,7 @@
                         <div class="search-category-container">
                           <label class="styled-select">
                             <select>
-                              <option value="none">Locations</option>
+                              <option value="none">Lieux</option>
                               <option value="none">New York</option>
                               <option value="none">California</option>
                               <option value="none">Washington</option>
@@ -130,7 +96,7 @@
                         <div class="search-category-container">
                           <label class="styled-select">
                             <select>
-                              <option>All Categories</option>
+                              <option>Toutes les Categories</option>
                               <option>Finance</option>
                               <option>IT & Engineering</option>
                               <option>Education/Training</option>
@@ -162,7 +128,7 @@
     <section class="category section bg-gray">
       <div class="container">
         <div class="section-header">  
-          <h2 class="section-title">Browse Categories</h2>
+          <h2 class="section-title">Les Categories</h2>
           <p>Most popular categories of portal, sorted by popularity</p>
         </div>
         <div class="row">   
@@ -243,39 +209,6 @@
     </section>
     <!-- Category Section End -->  
 
-    <!-- Listings Section Start -->
-    <section id="job-listings" class="section">
-      <div class="container text-center wow  wow fadeInUp">
-        <h1 class="section-title">You Using Free Lite Version :(</h1>
-<h6>Purchase Full Version to Get All Pages, Features, Docs and Support!</h6></br>
-<a href="https://rebrand.ly/jobx-gg" target="_blank" rel="nofollow" class="btn btn-common btn-lg"><span class="lni-pointer-right"></span> Purchase Now!</a>
-      </div>
-    </section>
-    <!-- Listings Section End -->
-
-    <!-- Browse jobs Section Start -->
-    <div id="browse-jobs" class="section bg-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="text-wrapper">
-              <div>
-                <h3>7,000+ Browse Jobs</h3>
-                <p>Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide. The right job is out there.</p>
-                <a class="btn btn-common" href="#">Search jobs</a>
-              </div>
-            </div>
-          </div>
-           <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="img-thumb">
-              <img class="img-fluid" src="<?= CSS_DIR.'assets/'; ?>img/search.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Browse jobs Section End -->   
-
     <!-- How It Work Section Start -->
     <section class="how-it-works section">
       <div class="container">
@@ -320,7 +253,7 @@
     <section id="latest-jobs" class="section bg-gray">
       <div class="container">
         <div class="section-header">  
-          <h2 class="section-title">Latest Jobs</h2>
+          <h2 class="section-title">Recents</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque dignissim quam et <br> metus effici turac fringilla lorem facilisis.</p>       
         </div>
         <div class="row">
@@ -330,7 +263,7 @@
                 <img src="<?= CSS_DIR.'assets/'; ?>img/features/img-1.jpg" alt="">
               </div>
               <div class="content">
-                <h3><a href="job-details.html">UX Designer</a></h3>
+                <h3><a href="job-details.html">Huissier</a></h3>
                 <p class="brand">MagNews</p>
                 <div class="tags">  
                   <span><i class="lni-map-marker"></i> New York</span>  
@@ -347,7 +280,7 @@
                 <img src="<?= CSS_DIR.'assets/'; ?>img/features/img-2.jpg" alt="">
               </div>
               <div class="content">
-                <h3><a href="job-details.html">UI Designer</a></h3>
+                <h3><a href="job-details.html">Plombier</a></h3>
                 <p class="brand">Hunter Inc.</p>
                 <div class="tags">  
                   <span><i class="lni-map-marker"></i> New York</span>  
@@ -364,7 +297,7 @@
                 <img src="<?= CSS_DIR.'assets/'; ?>img/features/img-3.jpg" alt="">
               </div>
               <div class="content">
-                <h3><a href="job-details.html">Web Developer</a></h3>
+                <h3><a href="job-details.html">Artisan</a></h3>
                 <p class="brand">MagNews</p>
                 <div class="tags">  
                   <span><i class="lni-map-marker"></i> New York</span>  
@@ -499,106 +432,6 @@
     </section>
     <!-- Testimonial Section End -->  
 
-    <!-- Start Pricing Table Section -->
-    <div id="pricing" class="section bg-gray">
-      <div class="container text-center wow  wow fadeInUp">
-        <h1 class="section-title">You Using Free Lite Version :(</h1>
-<h6>Purchase Full Version to Get All Pages, Features, Docs and Support!</h6></br>
-<a href="https://rebrand.ly/jobx-gg" target="_blank" rel="nofollow" class="btn btn-common btn-lg"><span class="lni-pointer-right"></span> Purchase Now!</a>
-      </div>
-    </div>
-    <!-- End Pricing Table Section -->
-
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-      <!-- Container Starts -->
-      <div class="container">
-        <div class="section-header">  
-          <h2 class="section-title">Blog Post</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque dignissim quam et <br> metus effici turac fringilla lorem facilisis.</p>      
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="<?= CSS_DIR.'assets/'; ?>img/blog/img1.jpg" alt="">
-                </a>              
-              </div>
-              <div class="blog-item-text"> 
-                <h3><a href="single-post.html">Tips to write an impressive resume online for beginner</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore praesentium asperiores ad vitae.</p>
-              </div>
-              <a class="readmore" href="#">Read More</a>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="<?= CSS_DIR.'assets/'; ?>img/blog/img2.jpg" alt="">
-                </a>              
-              </div>
-              <div class="blog-item-text"> 
-                <h3><a href="single-post.html">Let's explore 5 cool new features in JobBoard theme</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore praesentium asperiores ad vitae.</p>
-              </div>
-              <a class="readmore" href="#">Read More</a>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="<?= CSS_DIR.'assets/'; ?>img/blog/img3.jpg" alt="">
-                </a>              
-              </div>
-              <div class="blog-item-text"> 
-                <h3><a href="single-post.html">How to convince recruiters and get your dream job</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore praesentium asperiores ad vitae.</p>
-              </div>
-              <a class="readmore" href="#">Read More</a>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- blog Section End -->
-
-    <!-- download Section Start -->
-    <section id="download" class="section bg-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-8 col-xs-12">
-            <div class="download-wrapper">
-              <div>
-                <div class="download-text">
-                  <h4>Download Our Best Apps</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque dignissim quam et metus effici turac fringilla lorem facilisis, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="app-button">
-                <a href="#" class="btn btn-border"><i class="lni-apple"></i>Download <br> <span>From App Store</span></a>
-                <a href="#" class="btn btn-common btn-effect"><i class="lni-android"></i> Download <br> <span>From Play Store</span></a>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-4 col-xs-12">            
-            <div class="download-thumb">
-              <img class="img-fluid" src="<?= CSS_DIR.'assets/'; ?>img/app.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- download Section Start -->
+    
 
     
