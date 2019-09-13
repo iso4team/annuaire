@@ -5,6 +5,11 @@ $router->setBasePath(APP_NAME);
 
 $router->map('GET', '/', array('c' => 'ControleurHome', 'a' => 'actionIndex'), 'home_index');
 
+$router->map('GET', '/qui-sommes-nous', array('c' => 'ControleurHome', 'a' => 'actionNous'), 'home_nous');
+$router->map('GET', '/services', array('c' => 'ControleurHome', 'a' => 'actionService'), 'home_service');
+$router->map('GET', '/contact', array('c' => 'ControleurHome', 'a' => 'actionContact'), 'home_con');
+
+
 $router->map('GET', '/products', array('c' => 'ControleurProduct', 'a' => 'actionIndex'), 'product_index');
 $router->map('GET|POST', '/products/add', array('c' => 'ControleurProduct', 'a' => 'actionAddProduct'), 'product_add');
 $router->map('GET|POST', '/products/delete', array('c' => 'ControleurProduct', 'a' => 'actionDeleteProduct'), 'product_delete');

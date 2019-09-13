@@ -2,6 +2,6 @@
 
 define('HOST', "localhost");
 
-define('USER', "root");
-define('MDP', "Thiam@88");
-define('DB', "iso4_crm_db");
+define('USER', "iso4app");
+define('MDP', "iso4app@2019");
+define('DB', "iso4_annuaire_db");
