@@ -18,5 +18,5 @@
     <link rel="stylesheet" href="<?= CSS_DIR.'assets/'; ?>css/animate.css">
     <link rel="stylesheet" href="<?= CSS_DIR.'assets/'; ?>css/main.css">    
     <link rel="stylesheet" href="<?= CSS_DIR.'assets/'; ?>css/responsive.css">
-
+    <link rel="stylesheet" href="<?= CSS_DIR.'assets/'; ?>css/style.css">
   </head>

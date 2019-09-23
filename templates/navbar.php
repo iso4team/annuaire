@@ -1,27 +1,52 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                    <li class="nav-item <?= (isset($module) && ($module == 'product')) ? "active" : ""; ?>">
-                        <a class="nav-link" href="<?= Tools::generateURL("products"); ?>"><i class="fa fa-product-hunt"></i>  PRODUCTS</a>
-                    </li>
-                
-                    <li class="nav-item <?= (isset($module) && ($module == 'customer')) ? "active" : ""; ?>">
-                        <a class="nav-link" href="<?= Tools::generateURL("customers"); ?>"><i class="fa fa-users"></i>  CUSTOMERS</a>
-                    </li>
-               
-                    <li class="nav-item <?= (isset($module) && ($module == 'supplier')) ? "active" : ""; ?>">
-                        <a class="nav-link" href="<?= Tools::generateURL("suppliers"); ?>"><i class="fa fa-users"></i>  SUPPLIERS</a>
-                    </li>
-                
-                    <li class="nav-item <?= (isset($module) && ($module == 'order')) ? "active" : ""; ?>">
-                        <a class="nav-link" href="<?= Tools::generateURL("orders"); ?>"><i class="fa fa-print"></i>  ORDERS</a>
-                    </li>
-               
-                    <li class="nav-item <?= (isset($module) && ($module == 'delivery')) ? "active" : ""; ?>">
-                        <a class="nav-link" href="<?= Tools::generateURL("deliveries"); ?>"><i class="fa fa-print"></i>  DELIVERIES</a>
-                    </li>
-            </ul>
+<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+        <div class="container">
+          <div class="theme-header clearfix">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="lni-menu"></span>
+                <span class="lni-menu"></span>
+                <span class="lni-menu"></span>
+              </button>
+              <a href="index.html" class="navbar-brand"><img src="<?= CSS_DIR.'assets/'; ?>img/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+              <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">
+                    Accueil
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    Accueil
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    Qui sommes nous ?
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    Nos services
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">
+                    Contact
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Se connecter</a>
+                </li>
+                <li class="button-group">
+                  <a href="post-job.html" class="button btn btn-common">Devenir membre</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-</nav>
+        <div class="mobile-menu" data-logo="<?= CSS_DIR.'assets/'; ?>img/logo-mobile.png"></div>
+      </nav>
