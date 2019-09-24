@@ -11,17 +11,14 @@
  *
  * @author <ahmet.thiam@uvs.edu.sn>
  */
-class Order extends Model {
+class UserDomaine extends Model {
 
-    var $table = 'crm_order';
+    var $table = 'user_domaine';
     var $db;
 
     public function __construct() {
         parent::__construct();
     }
 
-
-    public function findAll() {
-        $sql = "SELECT p.prd_name, ";
-    }
+    
 }

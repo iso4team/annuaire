@@ -11,14 +11,18 @@
  *
  * @author <ahmet.thiam@uvs.edu.sn>
  */
-class Types extends Model {
+class UserCredential extends Model {
 
-    var $table = '';
+    var $table = 'user_credential';
     var $db;
 
     public function __construct() {
         parent::__construct();
     }
 
-    
+    public function findAll() {
+        $sql = "SELECT * From user_domaine where statut=1";
+        return $this->executerReq($sql);
+    }
+
 }

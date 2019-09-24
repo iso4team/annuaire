@@ -11,17 +11,19 @@
  *
  * @author <ahmet.thiam@uvs.edu.sn>
  */
-class ProductCategory extends Model {
+class Texte extends Model {
 
-    var $table = 'product_category';
+    var $prefix = 'prd';
+    var $table = 'texte';
     var $db;
 
     public function __construct() {
         parent::__construct();
     }
-    
-    public function findAll() {
-        return $this->recherche();
-    }
-}
 
+    public function findAll() {
+        $sql = "SELECT * From texte where statut=1";
+        return $this->executerReq($sql);
+    }
+
+}

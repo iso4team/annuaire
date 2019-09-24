@@ -11,9 +11,9 @@
  *
  * @author <ahmet.thiam@uvs.edu.sn>
  */
-class ProductCategory extends Model {
+class ServiceCategory extends Model {
 
-    var $table = 'product_category';
+    var $table = 'service_category';
     var $db;
 
     public function __construct() {
@@ -24,4 +24,3 @@ class ProductCategory extends Model {
         return $this->recherche();
     }
 }
-

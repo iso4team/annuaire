@@ -13,8 +13,7 @@
  */
 class Product extends Model {
 
-    var $prefix = 'prd';
-    var $table = 'crm_product';
+    var $table = 'product';
     var $db;
 
     public function __construct() {

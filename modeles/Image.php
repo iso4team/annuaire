@@ -9,11 +9,11 @@
 /**
  * Description of UserProfil
  *
- * @author <ahmet.thiam@uvs.edu.sn>
+ * @author <ahmet.thiam@iso4digit.com>
  */
-class SupplierCategory extends Model {
+class Image extends Model {
 
-    var $table = 'crm_category_supplier';
+    var $table = 'image';
     var $db;
 
     public function __construct() {

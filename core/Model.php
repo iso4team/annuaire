@@ -4,7 +4,7 @@ class Model {
 
     public function __construct($base = null) {
         try {
-            $this->db = Connect::getInstance("iso4_crm_db");
+            $this->db = Connect::getInstance("iso4_annuaire_db");
         } catch (Exception $ex) {
             error_log($ex->getMessage());
         }

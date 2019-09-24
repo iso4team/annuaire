@@ -1,20 +1,17 @@
 <body>
     <!-- Header Section Start -->
-    <header id="home" class="hero-area"> 
-      <!-- Navbar Start -->
-      <?php
-      include_once "navbar.php";
-      ?>
-      <!-- Navbar End -->
-    
-      <?php
-      include_once "search.php";
-      ?>
+    <header id="home"> 
+        <!-- Navbar Start -->
+        <?php
+        include_once "navbar.php";
+        ?>
+        <!-- Navbar End -->
     </header>
     <!-- Header Section End --> 
-
     
 
-    
 
-    
+
+
+
+
