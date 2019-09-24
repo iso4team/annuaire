@@ -4,4 +4,4 @@ define('HOST', "localhost");
 
 define('USER', "iso4app");
 define('MDP', "iso4app@2019");
-define('DB', "iso4_annuaire_db");
+define('DB', "job_directory_db");
