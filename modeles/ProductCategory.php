@@ -23,5 +23,9 @@ class ProductCategory extends Model {
     public function findAll() {
         return $this->recherche();
     }
+    public function findAllAndDetails(){
+        $sql = "SELECT pc.pc_name, COUNT(pro_name) as nb_pro_category FROM product_category pc LEFT JOIN product p ON pc.id=p.pro_category GROUP BY pc.pc_name";
+        return $this->executerReq($sql);
+    }
 }
 

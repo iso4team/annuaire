@@ -19,13 +19,14 @@ class Product extends Model {
     public function __construct() {
         parent::__construct();
     }
-
-    public function findAll() {
-        $sql = "SELECT p.*, c.ca_libelle category, s.str_code store "
-                . "FROM crm_product p "
-                . "JOIN crm_category_product c ON c.id = prd_category "
-                . "LEFT JOIN crm_store s ON s.id = prd_fk_store_id";
+    
+    public function findSerciceResearch($result = array()) {
+        $cle = $result['keyword'];
+        $pro_id = $result['category'];
+        $sql = "SELECT p.id,p.pro_name,u.id, u.first_name,u.last_name, u.phone, u.email,u.address, c.id, c.ct_name FROM product p "
+                ."JOIN user u ON u.id = p.pro_user AND  p.pro_name LIKE '%".$cle."%'"
+                ."JOIN product_category pc ON pc.id = p.pro_category AND pc.id='".$pro_id."'"
+                ."JOIN city c ON c.id = u.fk_city";
         return $this->executerReq($sql);
-    }
-
+    } 
 }
