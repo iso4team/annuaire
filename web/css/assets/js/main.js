@@ -15,7 +15,19 @@ JS INDEX
 6. Testimonial owl carousel
 7. New Products owl carouse
 ================================================*/
-
+function filtreCategories() {
+  var choix = document.getElementById("type").value;
+  if(choix=="s"){
+     $('#c_produits').css('display','none'); 
+     $('#c_services').css('display','block'); 
+  }else if (choix=="p") {
+        $('#c_services').css('display','none');
+        $('#c_produits').css('display','block'); 
+    }else{
+        $('#c_services').css('display','block'); 
+        $('#c_produits').css('display','block'); 
+    }
+}
 (function($) {
 
   "use strict";

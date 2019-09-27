@@ -16,10 +16,10 @@
                                 <div class="form-group">
                                     <div class="search-category-container">
                                         <label class="styled-select">
-                                            <select name="type">
-                                                <option value="">Vous cherchez ?</option>
-                                                <option value="service">Service</option>
-                                                <option value="produit">Produit</option>
+                                            <select name="type" id="type" onchange="filtreCategories()">
+                                                <option value="t">Vous cherchez ?</option>
+                                                <option value="s">Service</option>
+                                                <option value="p">Produit</option>
                                             </select>
                                         </label>
                                     </div>
@@ -30,14 +30,15 @@
                                 <div class="form-group">
                                     <div class="search-category-container">
                                         <label class="styled-select">
-                                            <select name="local">
+                                            <select name="local" >
                                                 <option value="none">Lieux</option>
-                                                <option value="none">New York</option>
-                                                <option value="none">California</option>
-                                                <option value="none">Washington</option>
-                                                <option value="none">Birmingham</option>
-                                                <option value="none">Chicago</option>
-                                                <option value="none">Phoenix</option>
+                                                <?php
+                                                    foreach ($citys as $c) {
+                                                        ?>
+                                                        <option value="<?= $c['id']; ?>"><?= $c['ct_name']; ?></option>
+                                                        <?php
+                                                    }
+                                                ?>
                                             </select>
                                         </label>
                                     </div>
@@ -49,8 +50,31 @@
                                     <div class="search-category-container">
                                         <label class="styled-select">
                                             <select name="category">
-                                                <option>Toutes les Categories</option>
+                                                <option>Toutes les catégories</option>
                                                 <?php
+                                                if (!empty($service_categories)) {?>
+                                                <optgroup label="Catégories Services"id="c_services">
+                                                <?php  
+                                                    foreach ($service_categories as $s_c) {
+                                                        ?>
+                                                        <option value="<?= $s_c['id']; ?>"><?= $s_c['sc_name']; ?></option>
+                                                        <?php
+                                                    }
+                                                } ?>
+                                                <?php
+                                                if (!empty($product_categories)) {?>
+                                                <optgroup label="Catégories Produits" id="c_produits">
+                                                <?php  
+                                                    foreach ($product_categories as $p_c) {
+                                                        ?>
+                                                        <option value="<?= $p_c['id']; ?>"><?= $p_c['pc_name']; ?></option>
+                                                        <?php
+                                                    }
+                                                } ?>
+                                                </optgroup>
+                                            </select>
+                                                <?php
+                                                /**
                                                 if (!empty($product_categories)) {
                                                     foreach ($product_categories as $p_c) {
                                                         ?>
@@ -68,10 +92,10 @@
                                                     <option>Science</option>                              
                                                     <option>Food Services</option>
                                                     <?php
-                                                }
+                                                }**/
                                                 ?>
 
-                                            </select>
+                                            <!--/select-->
                                         </label>
                                     </div>
                                     <i class="lni-layers"></i>
