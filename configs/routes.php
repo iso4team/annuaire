@@ -9,6 +9,8 @@ $router->map('GET', '/qui-sommes-nous', array('c' => 'ControleurHome', 'a' => 'a
 $router->map('GET', '/services', array('c' => 'ControleurHome', 'a' => 'actionService'), 'home_service');
 $router->map('GET', '/contact', array('c' => 'ControleurHome', 'a' => 'actionContact'), 'home_con');
 
-$router->map('GET', '/deliveries', array('c' => 'ControleurDelivery', 'a' => 'actionIndex'), 'delivery_index');
-$router->map('GET|POST', '/deliveries/add', array('c' => 'ControleurDelivery', 'a' => 'actionAddDelivery'), 'delivery_add');
-$router->map('GET|POST', '/deliveries/delete', array('c' => 'ControleurDelivery', 'a' => 'actionDeleteDelivery'), 'delivery_delete');
+$router->map('GET|POST', '/login', array('c' => 'ControleurUser', 'a' => 'actionLogin'), 'user_login');
+$router->map('GET|POST', '/logout', array('c' => 'ControleurUser', 'a' => 'actionLogour'), 'user_logout');
+$router->map('GET|POST', '/subscribe', array('c' => 'ControleurUser', 'a' => 'actionSubscribe'), 'user_subscribe');
+$router->map('GET|POST', '/confirm', array('c' => 'ControleurUser', 'a' => 'actionConfirm'), 'user_confirm');
+

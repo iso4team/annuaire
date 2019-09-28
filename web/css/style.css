@@ -1,4 +1,21 @@
+body {
+    font-family: "Tahoma";
+    color: #000;
+}
+
+.navbar {
+    border-bottom: 1px solid #D6D6D6;
+}
 .hero-area .contents {
     padding: 50px 0 50px;
     text-align: center;
+}
+
+.section-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.section-header .section-title {
+    text-transform: uppercase;
+    border-bottom: 1px solid #D6D6D6;
 }

@@ -8,13 +8,13 @@
               <div class="widget">
                 <div class="footer-logo"><img src="<?= CSS_DIR.'assets/'; ?>img/logo-footer.png" alt=""></div>
                 <div class="textwidget">
-                  <p>Sed consequat sapien faus quam bibendum convallis quis in nulla. Pellentesque volutpat odio eget diam cursus semper.</p>
+                  <p>Publiez vos services et produits.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-6 col-md-4 col-xs-12">
               <div class="widget">
-                <h3 class="block-title">Quick Links</h3>
+                <h3 class="block-title">Liens rapides</h3>
                 <ul class="menu">
                   <li><a href="#">About Us</a></li>
                   <li><a href="#">Support</a></li>
@@ -22,7 +22,7 @@
                   <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="menu">
-                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Termes & Conditions</a></li>
                   <li><a href="#">Privacy</a></li>
                   <li><a href="#">Refferal Terms</a></li>
                   <li><a href="#">Product License</a></li>
@@ -31,8 +31,8 @@
             </div>
             <div class="col-lg-3 col-md-4 col-xs-12">
               <div class="widget">
-                <h3 class="block-title">Subscribe Now</h3>
-                <p>Sed consequat sapien faus quam bibendum convallis.</p> 
+                <h3 class="block-title">S'inscrire</h3>
+                <p>Recevez nos dernieres mises a jour.</p> 
                 <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
                   <div class="form-group is-empty">
                     <input type="email" value="" name="Email" class="form-control" id="EMAIL" placeholder="Enter Email..." required="">

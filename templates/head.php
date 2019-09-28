@@ -18,5 +18,6 @@
     <link rel="stylesheet" href="<?= CSS_DIR.'assets/'; ?>css/animate.css">
     <link rel="stylesheet" href="<?= CSS_DIR.'assets/'; ?>css/main.css">    
     <link rel="stylesheet" href="<?= CSS_DIR.'assets/'; ?>css/responsive.css">
-    <link rel="stylesheet" href="<?= CSS_DIR.'assets/'; ?>css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?= CSS_DIR; ?>style.css">
   </head>

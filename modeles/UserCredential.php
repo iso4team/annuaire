@@ -21,7 +21,7 @@ class UserCredential extends Model {
     }
 
     public function findAll() {
-        $sql = "SELECT * From user_domaine where statut=1";
+        $sql = "SELECT * FROM $this->table WHERE statut = 1";
         return $this->executerReq($sql);
     }
 

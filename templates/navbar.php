@@ -34,10 +34,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Se connecter</a>
+                        <a class="nav-link" href="<?= Tools::generateURL("login"); ?>">Se connecter</a>
                     </li>
                     <li class="button-group">
-                        <a href="post-job.html" class="button btn btn-common">Devenir membre</a>
+                        <a href="<?= Tools::generateURL("subscribe"); ?>" class="button btn btn-common">Devenir membre</a>
                     </li>
                 </ul>
             </div>

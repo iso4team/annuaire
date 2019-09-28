@@ -13,12 +13,16 @@
  */
 class User extends Model {
 
-    var $table = 'crm_user';
+    var $table = 'user';
     var $db;
 
     public function __construct() {
         parent::__construct();
     }
 
+    public function findAll() {
+        $sql = "SELECT * FROM $this->table WHERE statut = 1";
+        return $this->executerReq($sql);
+    }
     
 }

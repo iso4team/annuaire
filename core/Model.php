@@ -75,9 +75,9 @@ class Model {
     public function ajouter($champs = array(), $needID = FALSE) {
         if (!empty($champs)) {
             $sql = "INSERT INTO " . $this->table . "(";
-            foreach ($champs as $attribut => $contenu):
+            foreach ($champs as $attribut => $contenu){
                 $sql .= $attribut . ",";
-            endforeach;
+            }
             $sql = substr($sql, 0, -1);
 
             $sql .= ") VALUES (";
