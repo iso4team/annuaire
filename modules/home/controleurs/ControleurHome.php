@@ -4,22 +4,42 @@ class ControleurHome {
 
     protected $m_service_category;
     protected $m_product_category;
+    protected $m_city;
     protected $m_texte;
+    protected $m_service;
+    protected $m_product;
 
     public function __construct() {
         $this->m_service_category = new ServiceCategory();
         $this->m_product_category = new ProductCategory();
+        $this->m_city = new City();
         $this->m_texte = new Texte();
+        $this->m_service = new Service();
+        $this->m_product = new Product();
     }
 
     public function actionIndex() {
+        $services = array();$products = array();
+        $product_categories_page = array();$service_categories_page = array();
         $service_categories = $this->m_service_category->findAll();
+        $service_categories_page = $this->m_service_category->findAllAndDetails();
         $product_categories = $this->m_product_category->findAll();
+        $product_categories_page = $this->m_product_category->findAllAndDetails();
+        
+        
+        $citys = $this->m_city->findAll();
         
         $result = array();
         $datas = filter_input_array(INPUT_POST);
         if (isset($datas) && !empty($datas)) {
             $result = $datas;
+            $motCle = $result['keyword'];
+            if($result['type']=="s"){
+            $services = $this->m_service->findSerciceResearch($result);
+            }
+            if($result['type']=="p"){
+               $products = $this->m_product->findSerciceResearch($result); 
+            }
             include_once 'search_result.php';
         } else {
             include_once 'home.php';
@@ -49,5 +69,4 @@ class ControleurHome {
         $texte = $resultat[0]['texte'];
         include 'contact.php';
     }
-
 }
