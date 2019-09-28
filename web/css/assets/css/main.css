@@ -4447,3 +4447,14 @@ footer .menu li .small-title {
   color: #333;
   font-weight: 400;
 }
+
+
+.col-lg-4 {
+    width: 33.3333%;
+    float: left;
+}
+.img-services {
+    float: left;
+    padding-right: 31px;
+    padding-left: 31px;
+}

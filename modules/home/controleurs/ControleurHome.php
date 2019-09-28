@@ -47,10 +47,10 @@ class ControleurHome {
     }
 
     public function actionNous() {
-//        $conditions  = "code = 'qsn'";
-//        $resultat = array();
-//        $resultat = $this->m_texte->recherche(array(), $conditions);
-//        $texte = $resultat[0]['texte'];
+        $conditions  = "code = 'qsn'";
+        $resultat = array();
+        $resultat = $this->m_texte->recherche(array(), $conditions);
+        $texte = $resultat[0]['texte'];
         include 'quisommesnous.php';
     }
 
