@@ -1,6 +1,5 @@
 <?php
 include_once HTML_DIR . "search.php";
-print_r($services);
 ?>
 <!-- Latest Section Start -->
 <section id="latest-jobs" class="section bg-gray">
