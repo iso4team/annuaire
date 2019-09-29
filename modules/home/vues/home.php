@@ -15,7 +15,7 @@ include_once HTML_DIR . "search.php";
                 foreach ($service_categories_page as $value) {
             ?>
                 <div class="col-lg-3 col-md-6 col-xs-12 f-category">
-                <a href="browse-jobs.html">
+                <a href="/annuaire/AllSvCategory/<?= $value['sc_id'];?>">
                     <div class="icon bg-color-1">
                         <i class="lni-home"></i>
                     </div>
@@ -28,7 +28,7 @@ include_once HTML_DIR . "search.php";
                 foreach ($product_categories_page as $value) {
             ?>
             <div class="col-lg-3 col-md-6 col-xs-12 f-category">
-                <a href="browse-jobs.html">
+                <a href="/annuaire/AllProCategory/<?= $value['pc_id'];?>">
                     <div class="icon bg-color-1">
                         <i class="lni-home"></i>
                     </div>

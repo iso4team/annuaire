@@ -35,10 +35,14 @@ class ControleurHome {
             $result = $datas;
             $motCle = $result['keyword'];
             if($result['type']=="s"){
-            $services = $this->m_service->findSerciceResearch($result);
+                 $cle = $result['keyword'];
+               $sc_id = $result['category'];
+            $services = $this->m_service->findSerciceResearch($cle,$sc_id);
             }
             if($result['type']=="p"){
-               $products = $this->m_product->findSerciceResearch($result); 
+                $cle = $result['keyword'];
+               $pc_id = $result['category'];
+               $products = $this->m_product->findSerciceResearch($cle,$pc_id); 
             }
             include_once 'search_result.php';
         } else {
@@ -68,5 +72,17 @@ class ControleurHome {
         $resultat = $this->m_texte->recherche(array(), $conditions);
         $texte = $resultat[0]['texte'];
         include 'contact.php';
+    }
+    public function actionAllProCategory($id){
+        $current_category = $id; $products = array();$cle='';
+        $products =  $this->m_product->findSerciceResearch($cle, $id);
+        if(count($products)>0) $current_category= $products[0]['pc_name'];
+        include 'products_page.php';
+    }
+    public function actionAllSvCategory($id){
+        $current_category = $id; $serv = array();$cle='';
+        $serv =  $this->m_service->findSerciceResearch($cle, $id);
+        if(count($serv)>0) $current_category= $serv[0]['sc_name'];
+        include 'services_page.php';
     }
 }

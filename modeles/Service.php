@@ -20,21 +20,12 @@ class Service extends Model {
         parent::__construct();
     }
     
-    public function findSerciceResearch($result = array()) {
-         /*$sql = "SELECT s.id,s.sv_name,u.id, u.first_name,u.last_name, u.phone, u.email,u.address, c.id, c.ct_name FROM service s "
-                . "JOIN user u ON u.id = s.sv_user "
-                . "JOIN city c ON c.id = u.fk_city";*/
-        $cle = $result['keyword'];
-        $sv_id = $result['category'];
-        $sql = "SELECT s.id,s.sv_name,u.id, u.first_name,u.last_name, u.phone, u.email,u.address, c.id, c.ct_name FROM service s "
+    public function findSerciceResearch($cle,$sc_id) {
+        $sql = "SELECT s.id,s.sv_name,sc.sc_name,u.id, u.first_name,u.last_name, u.phone, u.email,u.address, c.id, c.ct_name FROM service s "
                 ."JOIN user u ON u.id = s.sv_user AND  s.sv_name LIKE '%".$cle."%'"
-                ."JOIN service_category sc ON sc.id = s.sv_category AND sc.id='".$sv_id."'"
+                ."JOIN service_category sc ON sc.id = s.sv_category AND sc.id='".$sc_id."'"
                 ."JOIN city c ON c.id = u.fk_city";
         return $this->executerReq($sql);
-    } 
-     public function findSerciceResearchTest($motCle) {
-        $donnees = array(); $conditions = "sv_name LIKE '%".$motCle."%'";
-        return $this->recherche($donnees,$conditions);
     } 
    
 }
