@@ -49,7 +49,7 @@ include_once HTML_DIR . "search.php";
     <div class="container">
         <div class="section-header">  
             <h2 class="section-title">Recents</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque dignissim quam et <br> metus effici turac fringilla lorem facilisis.</p>       
+            <p>Les derniers services et produits ajoutés.</p>       
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12 col-xs-12">
@@ -155,7 +155,7 @@ include_once HTML_DIR . "search.php";
                 </div>
             </div>
             <div class="col-12 text-center mt-4">
-                <a href="job-page.html" class="btn btn-common">Browse All Jobs</a>
+                <a href="job-page.html" class="btn btn-common">Parcourir tous les produits et services.</a>
             </div>
         </div>
     </div>

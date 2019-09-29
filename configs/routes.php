@@ -14,3 +14,4 @@ $router->map('GET|POST', '/logout', array('c' => 'ControleurUser', 'a' => 'actio
 $router->map('GET|POST', '/subscribe', array('c' => 'ControleurUser', 'a' => 'actionSubscribe'), 'user_subscribe');
 $router->map('GET|POST', '/confirm', array('c' => 'ControleurUser', 'a' => 'actionConfirm'), 'user_confirm');
 
+$router->map('GET|POST', '/private', array('c' => 'ControleurPrivate', 'a' => 'actionIndex'), 'private_home');

@@ -82,6 +82,7 @@
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="<?= CSS_DIR.'assets/'; ?>js/jquery-min.js"></script>
+    <script src="<?= CSS_DIR.'bootstrap/'; ?>js/bootstrap.min.js"></script>
     <script src="<?= CSS_DIR.'assets/'; ?>js/popper.min.js"></script>
 
     <script src="<?= CSS_DIR.'assets/'; ?>js/owl.carousel.min.js"></script>     

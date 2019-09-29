@@ -1,4 +1,4 @@
 <body>
-    <header id="home"> 
+    <div class="container-fluid" id="home"> 
         <?php include_once "navbar.php";?>
-    </header>
+    </div>

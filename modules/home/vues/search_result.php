@@ -16,8 +16,7 @@ include_once HTML_DIR . "search.php";
             $action = ($result['type']=="s") ? $nb_sv.' Services trouvé(s)' : $nb_pro.' produits trouvé(s)';
             ?>
             <h2 class="section-title">R&eacute;sultat de la recherche: <?= $action;?></h2>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque dignissim quam et <br> metus effici turac fringilla lorem facilisis.</p>       
+            <p><?= $action; ?></p>       
         </div>
         <div class="row">
             
@@ -83,7 +82,7 @@ include_once HTML_DIR . "search.php";
     <div class="container">
         <div class="section-header">  
             <h2 class="section-title">Les Categories <?= ($result['type']=="s") ? ' de Services' : ' de produits ';?></h2>
-            <p>Most popular categories of portal, sorted by popularity</p>
+            <p>Les catégories les plus populaires.</p>
         </div>
         <div class="row">
             

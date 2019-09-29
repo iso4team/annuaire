@@ -19,3 +19,46 @@ body {
     text-transform: uppercase;
     border-bottom: 1px solid #D6D6D6;
 }
+
+/* Menu Admin */
+
+.private-main{
+    margin-top: 6%;
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 8px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #00BCD4; /* Dark grey background on mouse-over */
+    color: #FFFFFF;
+}
+
+.vertical-menu img{
+    width: 40px;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+.vertical-menu .menu-actif{
+    background-color: #00BCD4;
+    color: #FFFFFF;
+}
+
+.vertical-menu{
+    margin-bottom: 15px;
+}
+
+.vertical-menu a {
+    font-size: 13px;
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}

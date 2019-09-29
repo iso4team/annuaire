@@ -11,7 +11,12 @@ class ControleurUser {
     }
 
     public function actionLogin() {
-        include_once 'login.php';
+        $datas = filter_input_array(INPUT_POST);
+        if (isset($datas) && !empty($datas)) {
+            header("location:" . Tools::generateURL("private"));
+        } else {
+            include_once 'login.php';
+        }
     }
 
     public function actionLogout() {
@@ -38,9 +43,9 @@ class ControleurUser {
                     $infos_cred = array();
                     $infos_cred['crd_login'] = $datas['email'];
                     $infos_cred['crd_salt'] = $salt;
-                    $infos_cred['crd_password'] = md5($datas['password'].$salt);
+                    $infos_cred['crd_password'] = md5($datas['password'] . $salt);
                     $infos_cred['crd_user'] = $user_id;
-                    if($this->m_cred->ajouter($infos_cred)){
+                    if ($this->m_cred->ajouter($infos_cred)) {
                         $resul = array("code" => "000", "message" => "Felicitation! Votre compte est cree. Un mail est envoye pour valider votre mail.");
                     } else {
                         $resul = array("code" => "111", "message" => "Desole. Nous n'avons pas creer votre compte.");
