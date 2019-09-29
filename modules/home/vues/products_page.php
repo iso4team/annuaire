@@ -31,7 +31,7 @@ include_once HTML_DIR . "search.php";
                                     <span><i class="lni-user"></i>  <?= $value['first_name'].''.$value['last_name'];?></span> 
                                 </div>
                                 <div class="tag mb-3"><i class="lni-phone"></i> <?= $value['phone'].' / '.$value['email'];?></div>
-                                <span class="full-time">Plus de détails</span>
+                                <a href="/annuaire/details/product/<?= $value['id_pro'];?>"><span class="full-time">Plus de détails</span></a>
                             </div>
                         </div>
                     </div>

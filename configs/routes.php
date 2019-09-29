@@ -10,6 +10,8 @@ $router->map('GET', '/services', array('c' => 'ControleurHome', 'a' => 'actionSe
 $router->map('GET', '/contact', array('c' => 'ControleurHome', 'a' => 'actionContact'), 'home_con');
 $router->map('GET', '/AllProCategory/[i:id]', array('c' => 'ControleurHome', 'a' => 'actionAllProCategory'), 'home_pc');
 $router->map('GET', '/AllSvCategory/[i:id]', array('c' => 'ControleurHome', 'a' => 'actionAllSvCategory'), 'home_sv');
+$router->map('GET', '/details/product/[i:id]', array('c' => 'ControleurHome', 'a' => 'actionDetailsProduct'), 'home_dpro');
+$router->map('GET', '/details/service/[i:id]', array('c' => 'ControleurHome', 'a' => 'actionDetailsService'), 'home_dserv');
 
 $router->map('GET', '/deliveries', array('c' => 'ControleurDelivery', 'a' => 'actionIndex'), 'delivery_index');
 $router->map('GET|POST', '/deliveries/add', array('c' => 'ControleurDelivery', 'a' => 'actionAddDelivery'), 'delivery_add');

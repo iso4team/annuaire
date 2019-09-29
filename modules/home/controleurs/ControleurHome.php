@@ -74,15 +74,31 @@ class ControleurHome {
         include 'contact.php';
     }
     public function actionAllProCategory($id){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
         $current_category = $id; $products = array();$cle='';
         $products =  $this->m_product->findSerciceResearch($cle, $id);
         if(count($products)>0) $current_category= $products[0]['pc_name'];
         include 'products_page.php';
     }
     public function actionAllSvCategory($id){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
         $current_category = $id; $serv = array();$cle='';
         $serv =  $this->m_service->findSerciceResearch($cle, $id);
         if(count($serv)>0) $current_category= $serv[0]['sc_name'];
         include 'services_page.php';
+    }
+    public function actionDetailsProduct($id){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
+        $product =  $this->m_product->detailsProduct('', $id);
+        include 'detailsproduct.php';
+    }
+    public function actionDetailsService($id){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
+        $service =  $this->m_service->detailsService('', $id);
+        include 'detailservice.php';
     }
 }
