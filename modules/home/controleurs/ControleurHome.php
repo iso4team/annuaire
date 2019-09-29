@@ -101,4 +101,11 @@ class ControleurHome {
         $service =  $this->m_service->detailsService('', $id);
         include 'detailservice.php';
     }
+    public function actionAllElement(){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
+        $products =  $this->m_product->findAll('');
+        $services =  $this->m_service->findAll('');
+        include 'all_elements.php';
+    }
 }

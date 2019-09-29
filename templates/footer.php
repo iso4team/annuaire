@@ -35,7 +35,7 @@
                 <p>S'informer des derniers Produits & Services </p> 
                 <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
                   <div class="form-group is-empty">
-                    <input type="email" value="" name="Email" class="form-control" id="EMAIL" placeholder="Enter Email..." required="">
+                    <input type="email" value="" name="Email" class="form-control" id="EMAIL" placeholder="Entrer votre  Email..." required="">
                     <button type="submit" name="subscribe" id="subscribes" class="btn btn-common sub-btn"><i class="lni-envelope"></i></button>
                     <div class="clearfix"></div>
                   </div>
