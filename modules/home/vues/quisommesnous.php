@@ -5,9 +5,7 @@
             <p>Pour mieux nous connaitre</p>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-            Qui sommes nous ?
-            </div>
+            <?= $texte;?>
         </div>  
     </div> 
 </section>

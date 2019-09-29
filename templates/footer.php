@@ -14,12 +14,12 @@
             </div>
             <div class="col-lg-6 col-md-4 col-xs-12">
               <div class="widget">
-                <h3 class="block-title">Liens rapides</h3>
+                <h3 class="block-title">Accès Rapide</h3>
                 <ul class="menu">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Support</a></li>
+                  <li><a href="/annuaire/qui-sommes-nous">A propos de xJob</a></li>
+                  <li><a href="/annuaire/services">Services</a></li>
                   <li><a href="#">License</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="/annuaire/contact">Contact</a></li>
                 </ul>
                 <ul class="menu">
                   <li><a href="#">Termes & Conditions</a></li>
@@ -31,11 +31,11 @@
             </div>
             <div class="col-lg-3 col-md-4 col-xs-12">
               <div class="widget">
-                <h3 class="block-title">S'inscrire</h3>
-                <p>Recevez nos dernieres mises a jour.</p> 
+                <h3 class="block-title">Newsletter</h3>
+                <p>S'informer des derniers Produits & Services </p> 
                 <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
                   <div class="form-group is-empty">
-                    <input type="email" value="" name="Email" class="form-control" id="EMAIL" placeholder="Enter Email..." required="">
+                    <input type="email" value="" name="Email" class="form-control" id="EMAIL" placeholder="Entrer votre  Email..." required="">
                     <button type="submit" name="subscribe" id="subscribes" class="btn btn-common sub-btn"><i class="lni-envelope"></i></button>
                     <div class="clearfix"></div>
                   </div>

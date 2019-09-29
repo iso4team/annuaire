@@ -35,10 +35,14 @@ class ControleurHome {
             $result = $datas;
             $motCle = $result['keyword'];
             if($result['type']=="s"){
-            $services = $this->m_service->findSerciceResearch($result);
+                 $cle = $result['keyword'];
+               $sc_id = $result['category'];
+            $services = $this->m_service->findSerciceResearch($cle,$sc_id);
             }
             if($result['type']=="p"){
-               $products = $this->m_product->findSerciceResearch($result); 
+                $cle = $result['keyword'];
+               $pc_id = $result['category'];
+               $products = $this->m_product->findSerciceResearch($cle,$pc_id); 
             }
             include_once 'search_result.php';
         } else {
@@ -47,10 +51,10 @@ class ControleurHome {
     }
 
     public function actionNous() {
-//        $conditions  = "code = 'qsn'";
-//        $resultat = array();
-//        $resultat = $this->m_texte->recherche(array(), $conditions);
-//        $texte = $resultat[0]['texte'];
+        $conditions  = "code = 'qsn'";
+        $resultat = array();
+        $resultat = $this->m_texte->recherche(array(), $conditions);
+        $texte = $resultat[0]['texte'];
         include 'quisommesnous.php';
     }
 
@@ -68,5 +72,40 @@ class ControleurHome {
         $resultat = $this->m_texte->recherche(array(), $conditions);
         $texte = $resultat[0]['texte'];
         include 'contact.php';
+    }
+    public function actionAllProCategory($id){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
+        $current_category = $id; $products = array();$cle='';
+        $products =  $this->m_product->findSerciceResearch($cle, $id);
+        if(count($products)>0) $current_category= $products[0]['pc_name'];
+        include 'products_page.php';
+    }
+    public function actionAllSvCategory($id){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
+        $current_category = $id; $serv = array();$cle='';
+        $serv =  $this->m_service->findSerciceResearch($cle, $id);
+        if(count($serv)>0) $current_category= $serv[0]['sc_name'];
+        include 'services_page.php';
+    }
+    public function actionDetailsProduct($id){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
+        $product =  $this->m_product->detailsProduct('', $id);
+        include 'detailsproduct.php';
+    }
+    public function actionDetailsService($id){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
+        $service =  $this->m_service->detailsService('', $id);
+        include 'detailservice.php';
+    }
+    public function actionAllElement(){
+        $service_categories = $this->m_service_category->findAll();
+        $product_categories = $this->m_product_category->findAll();
+        $products =  $this->m_product->findAll('');
+        $services =  $this->m_service->findAll('');
+        include 'all_elements.php';
     }
 }

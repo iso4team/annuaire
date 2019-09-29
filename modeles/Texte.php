@@ -23,7 +23,8 @@ class Texte extends Model {
 
     public function findAll() {
         $sql = "SELECT * From texte where statut=1";
-        return $this->executerReq($sql);
+        
+        return $this->recherche(array(),$conditions);
     }
 
 }

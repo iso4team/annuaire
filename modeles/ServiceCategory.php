@@ -24,7 +24,7 @@ class ServiceCategory extends Model {
         return $this->recherche();
     }
     public function findAllAndDetails(){
-        $sql = "SELECT sc.sc_name, COUNT(sc_name) as nb_sv_category FROM service_category sc LEFT JOIN service s ON sc.id=s.sv_category GROUP BY sc.sc_name";
+        $sql = "SELECT sc.id as sc_id,sc.sc_name, COUNT(sc_name) as nb_sv_category FROM service_category sc JOIN service s ON sc.id=s.sv_category GROUP BY sc.id";
         return $this->executerReq($sql);
     }
 }

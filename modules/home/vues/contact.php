@@ -5,7 +5,6 @@
             <p>Informations sur les contacts</p>
         </div>
         <div class="row">
-            <?= $texte; ?> 
-        </div>  
-    </div> 
+            <?= $texte; ?>
+            </div> 
 </section>

@@ -8,16 +8,17 @@ include_once HTML_DIR . "search.php";
             <?php 
             $nb_sv = count($services);
             $nb_pro  = count($products);
-            $action = ($result['type']=="s") ? $nb_sv.' Services trouvé(s)' : $nb_pro.' produits trouvé(s)';
+            $total = $nb_sv+$nb_pro;
+            $action =  $nb_pro.' services et produits';
             ?>
             <h2 class="section-title">R&eacute;sultat de la recherche: <?= $action;?></h2>
-            <p><?= $action; ?></p>       
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque dignissim quam et <br> metus effici turac fringilla lorem facilisis.</p>       
         </div>
         <div class="row">
             
             
             <?php
-            if($result['type']=="s"){
                 foreach ($services as $value) {
             ?>
                 <div class="col-lg-6 col-md-12 col-xs-12">
@@ -39,7 +40,6 @@ include_once HTML_DIR . "search.php";
                 </div>
                     <?php
                 }
-            }elseif ($result['type']=="p") {
                 
                 foreach ($products as $value) {
             ?>
@@ -61,7 +61,6 @@ include_once HTML_DIR . "search.php";
                         </div>
                     </div>
             <?php
-                }
             }
             ?> 
             <div class="col-12 text-center mt-4">
@@ -71,52 +70,5 @@ include_once HTML_DIR . "search.php";
     </div>
 </section>
 <!-- Latest Section End -->
-
-<!-- Category Section Start -->
-<section class="category section bg-gray">
-    <div class="container">
-        <div class="section-header">  
-            <h2 class="section-title">Les Categories <?= ($result['type']=="s") ? ' de Services' : ' de produits ';?></h2>
-            <p>Les catégories les plus populaires.</p>
-        </div>
-        <div class="row">
-            
-            
-            <?php
-            if($result['type']=="s"){
-                foreach ($service_categories_page as $value) {
-            ?>
-                <div class="col-lg-3 col-md-6 col-xs-12 f-category">
-                <a href="/annuaire/AllSvCategory/<?= $value['sc_id'];?>">
-                    <div class="icon bg-color-1">
-                        <i class="lni-home"></i>
-                    </div>
-                    <h3><?= $value['sc_name'];?></h3>
-                    <p>(<?= $value['nb_sv_category'];?> produits)</p>
-                </a>
-            </div>
-                    <?php
-                }
-            }elseif ($result['type']=="p") {
-                
-                foreach ($product_categories_page as $value) {
-            ?>
-            <div class="col-lg-3 col-md-6 col-xs-12 f-category">
-                <a href="/annuaire/AllProCategory/<?= $value['pc_id'];?>">
-                    <div class="icon bg-color-1">
-                        <i class="lni-home"></i>
-                    </div>
-                    <h3><?= $value['pc_name'];?></h3>
-                    <p>(<?= $value['nb_pro_category'];?> produits)</p>
-                </a>
-            </div>
-            <?php
-                }
-            }
-            ?> 
-        </div>
-    </div>
-</section>
-<!-- Category Section End -->  
 
 
